@@ -6,7 +6,7 @@
 /*   By: szubair <szubair@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/04 13:42:36 by szubair           #+#    #+#             */
-/*   Updated: 2022/11/03 19:45:46 by szubair          ###   ########.fr       */
+/*   Updated: 2022/11/04 13:25:08 by szubair          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ void	rb(t_data *data)
 
 	if (data->topb > 0)
 	{
-		temp = data->b[data->topb]; 
+		temp = data->b[data->topb];
 		i = data->topb;
 		while (i > 0)
 		{
@@ -49,7 +49,6 @@ void	rb(t_data *data)
 	}
 	write(1, "rb\n", 3);
 }
-
 
 void	set_rr(t_data *data)
 {

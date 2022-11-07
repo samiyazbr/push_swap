@@ -6,7 +6,7 @@
 /*   By: szubair <szubair@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 18:11:45 by szubair           #+#    #+#             */
-/*   Updated: 2022/11/03 19:23:30 by szubair          ###   ########.fr       */
+/*   Updated: 2022/11/04 13:21:12 by szubair          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,4 +66,3 @@ int	ft_checkbestindex(t_data *data)
 	}
 	return (bestindex);
 }
-

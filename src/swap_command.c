@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   swap_command.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: szubair <szubair@student.42abudhabi.ae>            +#+  +:+       +#+        */
+/*   By: szubair <szubair@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/02 08:53:31 by szubair           #+#    #+#             */
-/*   Updated: 2022/10/24 15:32:08 by szubair          ###   ########.fr       */
+/*   Updated: 2022/11/04 13:26:20 by szubair          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ void	sa(t_data *data)
 	}
 	write(1, "sa\n", 3);
 }
-
 
 void	sb(t_data *data)
 {

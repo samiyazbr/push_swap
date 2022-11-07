@@ -6,7 +6,7 @@
 /*   By: szubair <szubair@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:36:39 by szubair           #+#    #+#             */
-/*   Updated: 2022/11/03 19:22:43 by szubair          ###   ########.fr       */
+/*   Updated: 2022/11/04 13:19:40 by szubair          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ void	error(t_data *data)
 	write(2, "Error\n", 6);
 	exit (0);
 }
-
 
 void	free_args(t_data *data, char **args)
 {
@@ -39,7 +38,6 @@ void	free_args(t_data *data, char **args)
 	write(2, "Error\n", 6);
 	exit (0);
 }
-
 
 void	ft_free(t_data *data)
 {

@@ -6,7 +6,7 @@
 /*   By: szubair <szubair@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 13:43:06 by szubair           #+#    #+#             */
-/*   Updated: 2022/11/03 19:29:23 by szubair          ###   ########.fr       */
+/*   Updated: 2022/11/04 13:25:30 by szubair          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ void	sortarry(t_data *data)
 	}
 }
 
-void 	ft_sort_small(t_data *data)
+void	ft_sort_small(t_data *data)
 {
 	if (data->topa == 0)
 		return ;

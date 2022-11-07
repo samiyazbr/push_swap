@@ -6,7 +6,7 @@
 /*   By: szubair <szubair@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 13:19:26 by szubair           #+#    #+#             */
-/*   Updated: 2022/11/03 19:24:13 by szubair          ###   ########.fr       */
+/*   Updated: 2022/11/04 13:22:00 by szubair          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,6 @@ void	double_check_arg(t_data *data, char *str)
 	}
 	free(args);
 }
-
 
 void	initialize(t_data *data, char **av)
 {

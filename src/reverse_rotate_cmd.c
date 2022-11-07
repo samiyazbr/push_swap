@@ -6,7 +6,7 @@
 /*   By: szubair <szubair@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/04 13:53:46 by szubair           #+#    #+#             */
-/*   Updated: 2022/11/03 19:45:11 by szubair          ###   ########.fr       */
+/*   Updated: 2022/11/04 13:24:15 by szubair          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@ void	rra(t_data *data)
 	}	
 	write(1, "rra\n", 4);
 }
-
 
 void	rrb(t_data *data)
 {

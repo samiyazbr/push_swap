@@ -6,7 +6,7 @@
 /*   By: szubair <szubair@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 15:31:02 by szubair           #+#    #+#             */
-/*   Updated: 2022/11/03 19:22:09 by szubair          ###   ########.fr       */
+/*   Updated: 2022/11/04 13:19:15 by szubair          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,6 @@ int	ft_is_duplicate(int *array, int maxindex)
 	}
 	return (0);
 }
-
 
 int	ft_is_sorted(t_data *data)
 {

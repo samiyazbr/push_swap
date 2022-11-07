@@ -6,7 +6,7 @@
 /*   By: szubair <szubair@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 13:27:05 by szubair           #+#    #+#             */
-/*   Updated: 2022/11/03 19:20:56 by szubair          ###   ########.fr       */
+/*   Updated: 2022/11/04 13:23:57 by szubair          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,8 @@ void	ft_sign(char c, int *sign, int *i)
 		}
 	}
 }
-int	ft_atoi(t_data *data, char *str, char **args) 
+
+int	ft_atoi(t_data *data, char *str, char **args)
 {
 	int		i;
 	long	res;
@@ -32,7 +33,6 @@ int	ft_atoi(t_data *data, char *str, char **args)
 	sign = 1;
 	res = 0;
 	i = 0;
-	
 	ft_sign(str[i], &sign, &i);
 	if (!ft_isdigit(str[i]))
 		free_args(data, args);
@@ -40,7 +40,8 @@ int	ft_atoi(t_data *data, char *str, char **args)
 	{
 		res = (res * 10) + str[i] - '0';
 		i++;
-		if (((res > 2147483647) && (sign == 1)) || ((res > 2147483648) && (sign == -1)))
+		if (((res > 2147483647) && (sign == 1)) \
+		|| ((res > 2147483648) && (sign == -1)))
 			free_args(data, args);
 	}
 	if ((!ft_isdigit(str[i]) && str[i]) || i > 12)

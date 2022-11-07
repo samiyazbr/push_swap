@@ -6,7 +6,7 @@
 /*   By: szubair <szubair@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 15:43:20 by szubair           #+#    #+#             */
-/*   Updated: 2022/11/03 19:27:43 by szubair          ###   ########.fr       */
+/*   Updated: 2022/11/04 13:21:34 by szubair          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ void	pusha(t_data *data)
 		pa(data);
 }
 
-void	 pushback(t_data *data)
+void	pushback(t_data *data)
 {
 	int	x;
 
