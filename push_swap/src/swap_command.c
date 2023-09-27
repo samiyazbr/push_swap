@@ -12,35 +12,48 @@
 
 #include "push_swap.h"
 
-void	sa(t_data *data)
+void sa(t_data *data)
 {
-	int	temp;
+    int temp;
 
-	if (data->topa > 0)
-	{
-		temp = data->a[data->topa];
-		data->a[data->topa] = data->a[data->topa - 1];
-		data->a[data->topa - 1] = temp;
-	}
-	write(1, "sa\n", 3);
+    // Check if there is more than one element in stack 'a'.
+    if (data->topa > 0)
+    {
+        // Swap the top two elements of stack 'a'.
+        temp = data->a[data->topa];
+        data->a[data->topa] = data->a[data->topa - 1];
+        data->a[data->topa - 1] = temp;
+    }
+
+    // Write "sa" to the standard output to indicate the operation.
+    write(1, "sa\n", 3);
 }
 
-void	sb(t_data *data)
+void sb(t_data *data)
 {
-	int	temp;
+    int temp;
 
-	if (data->topb > 0)
-	{
-		temp = data->b[data->topb];
-		data->b[data->topb] = data->b[data->topb - 1];
-		data->b[data->topb - 1] = temp;
-	}
-	write(1, "sb\n", 3);
+    // Check if there is more than one element in stack 'b'.
+    if (data->topb > 0)
+    {
+        // Swap the top two elements of stack 'b'.
+        temp = data->b[data->topb];
+        data->b[data->topb] = data->b[data->topb - 1];
+        data->b[data->topb - 1] = temp;
+    }
+
+    // Write "sb" to the standard output to indicate the operation.
+    write(1, "sb\n", 3);
 }
 
-void	ss(t_data *data)
+void ss(t_data *data)
 {
-	sa(data);
-	sb(data);
-	write(1, "ss\n", 3);
+    // Call the 'sa' function to swap the top two elements of stack 'a'.
+    sa(data);
+
+    // Call the 'sb' function to swap the top two elements of stack 'b'.
+    sb(data);
+
+    // Write "ss" to the standard output to indicate the operation.
+    write(1, "ss\n", 3);
 }

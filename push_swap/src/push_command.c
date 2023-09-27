@@ -12,24 +12,36 @@
 
 #include "push_swap.h"
 
-void	pa(t_data *data)
+void pa(t_data *data)
 {
-	if (data->topb >= 0)
-	{
-		data->a[data->topa + 1] = data->b[data->topb];
-		data->topa += 1;
-		data->topb -= 1;
-	}
-	write(1, "pa\n", 3);
+    // Check if the top index of array 'b' is greater than or equal to 0.
+    if (data->topb >= 0)
+    {
+        // Move an element from array 'b' to the top of array 'a'.
+        data->a[data->topa + 1] = data->b[data->topb];
+
+        // Update the top index of array 'a' and decrease the top index of array 'b'.
+        data->topa += 1;
+        data->topb -= 1;
+    }
+
+    // Write the string "pa\n" to the standard output (file descriptor 1).
+    write(1, "pa\n", 3);
 }
 
-void	pb(t_data *data)
+void pb(t_data *data)
 {
-	if (data->topa >= 0)
-	{
-		data->b[data->topb + 1] = data->a[data->topa];
-		data->topb += 1;
-		data->topa -= 1;
-	}	
-	write(1, "pb\n", 3);
+    // Check if the top index of array 'a' is greater than or equal to 0.
+    if (data->topa >= 0)
+    {
+        // Move an element from array 'a' to the top of array 'b'.
+        data->b[data->topb + 1] = data->a[data->topa];
+
+        // Update the top index of array 'b' and decrease the top index of array 'a'.
+        data->topb += 1;
+        data->topa -= 1;
+    }
+
+    // Write the string "pb\n" to the standard output (file descriptor 1).
+    write(1, "pb\n", 3);
 }
